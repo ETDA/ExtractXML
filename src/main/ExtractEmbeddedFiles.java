@@ -130,7 +130,7 @@ public final class ExtractEmbeddedFiles
             throws IOException
     {
         String embeddedFilename = filePath + filename;
-        File file = new File(filename);
+        File file = new File(embeddedFilename);
         System.out.println("Writing " + embeddedFilename);
         try (FileOutputStream fos = new FileOutputStream(file))
         {
