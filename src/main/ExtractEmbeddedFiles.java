@@ -62,7 +62,8 @@ public final class ExtractEmbeddedFiles
         {
             PDDocument document = null;
             try
-            {
+            { 
+            	//    sample data : src/main/resources/PDFA3_Append.pdf 
                 File pdfFile = new File(args[0]);
                 String filePath = pdfFile.getParent() + System.getProperty("file.separator");
                 document = PDDocument.load(pdfFile );
